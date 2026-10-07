@@ -27,7 +27,7 @@ spec:
 
           volumeMounts:
              - name: efs-storage
-                mountPath: /var/www/html/uploads
+               mountPath: /var/www/html/uploads
           ports:
             - containerPort: 80
 
