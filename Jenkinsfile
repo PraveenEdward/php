@@ -59,7 +59,7 @@ pipeline {
                     )
                 ]) {
                     sh '''
-                        kubectl create secret generic node-secret \
+                        kubectl create secret generic php-secret \
                             --from-literal=DB_USER="$DB_USER" \
                             --from-literal=DB_PASS="$DB_PASS" \
                             --dry-run=client -o yaml | kubectl apply -f -
