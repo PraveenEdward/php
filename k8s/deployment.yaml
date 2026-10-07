@@ -39,7 +39,7 @@ spec:
             limits:
               cpu: 200m
               memory: 128Mi
-    volumes:
-      - name: efs-storage
-        persistentVolumeClaim:
-          claimName: efs-pvc
+      volumes:
+        - name: efs-storage
+          persistentVolumeClaim:
+            claimName: efs-pvc
